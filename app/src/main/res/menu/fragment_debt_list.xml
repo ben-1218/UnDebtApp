@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/total_amount"
+        android:icon="@drawable/ic_totalamount"
+        android:title="show T.Amount"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item android:id="@+id/new_debt"
+          android:icon="@drawable/ic_menu_add"
+          android:title="@string/new_debt"
+          app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/show_subtitle"
+        android:title="@string/show_subtitle"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/clear_settled"
+        android:title="Clear Settled Debt"
+        app:showAsAction="ifRoom"/>
+
+
+
+</menu>

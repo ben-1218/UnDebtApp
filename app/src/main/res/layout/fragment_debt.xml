@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/debt_photo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/holo_blue_dark"
+                android:cropToPadding="true"
+                android:scaleType="centerInside" />
+
+            <ImageButton
+                android:id="@+id/debt_camera"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp"
+                android:background="@color/colorPrimary"
+                android:src="@drawable/ic_menu_camera" />
+
+            <CheckBox
+                android:id="@+id/debt_settled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/debt_settled_label"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/debt_title_label"
+                android:textColor="@android:color/black"
+                tools:layout_marginLeft="20dp" />
+
+            <EditText
+                android:id="@+id/debt_title"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/debt_title_hint"
+                tools:layout_marginLeft="20dp" />
+
+            <TextView
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_marginLeft="20dp"
+                android:text="Amount (RM)"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/debt_amount"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/debt_amount_hint"
+                android:inputType="numberDecimal"
+                tools:layout_marginLeft="20dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/debt_details_label"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/debt_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/debt_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/debt_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
+        android:text="pay (amount)"/>
+
+    <Button
+        android:id="@+id/debt_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
+        android:text="@string/debt_report_text"/>
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
+        android:text="Remove this debt "/>
+
+
+
+
+</LinearLayout>

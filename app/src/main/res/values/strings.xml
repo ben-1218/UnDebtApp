@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">UnDebt</string>
+    <string name="debt_title_hint">Enter description. </string>
+    <string name="debt_title_label">Debt</string>
+    <string name="debt_amount_hint">0.00</string>
+    <string name="debt_details_label">Details</string>
+    <string name="debt_settled_label">Settled</string>
+    <string name="date_picker_title">Date of Debt:</string>
+    <string name="time_picker_title">Time of Debt (Since) :</string>
+
+    <string name="new_debt">New Debt</string>
+    <string name="show_subtitle">Show Subtitle</string>
+    <string name="hide_subtitle">Hide Subtitle</string>
+    <string name="subtitle_format">%1$d debts</string>
+
+    <string name="debt_report_text"> Remind Via</string>
+    <string name="debt_report">Reminder: Debt of %1$s (RM %2$s) was recorded since %3$s. %4$s</string>
+    <string name="debt_report_settled">The debt is settled.</string>
+    <string name="debt_report_unsettled">The debt is not settled.</string>
+    <string name="debt_report_subject">Debt Reminder</string>
+    <string name="send_remind">remind via</string>
+
+</resources>
